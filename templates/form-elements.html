@@ -1,0 +1,749 @@
+{% extends 'layout_default.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/js/vendor/datepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="/static/js/vendor/colorpicker/css/bootstrap-colorpicker.css">
+    <link rel="stylesheet" href="/static/js/vendor/colorpalette/bootstrap-colorpalette.css">
+{% endblock %}
+{% block content %}
+<!-- Page content -->
+        <div id="content" class="col-md-12">
+
+
+          <!-- page header -->
+          <div class="pageheader">
+
+
+            <h2><i class="fa fa-thumb-tack" style="line-height: 48px;padding-left: 1px;"></i> Form Elements <span>// Place subtitle here...</span></h2>
+
+
+            <div class="breadcrumbs">
+              <ol class="breadcrumb">
+                <li>You are here</li>
+                <li><a href="index.html">Minimal</a></li>
+                <li><a href="form-elements.html">Forms</a></li>
+                <li class="active">Form Elements</li>
+              </ol>
+            </div>
+
+
+          </div>
+          <!-- /page header -->
+
+
+
+
+
+
+          <!-- content main container -->
+          <div class="main">
+
+
+
+
+            <!-- row -->
+            <div class="row">
+
+              <!-- col 12 -->
+              <div class="col-md-6">
+
+
+
+                <!-- tile -->
+                <section class="tile color transparent-black">
+
+
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>Text</strong> Inputs</h1>
+                    <div class="controls">
+                      <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                      <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+
+                    <form class="form-horizontal" role="form">
+
+                      <div class="form-group">
+                        <label for="input01" class="col-sm-4 control-label">Normal input field</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="input01">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="input02" class="col-sm-4 control-label">Password input field</label>
+                        <div class="col-sm-8">
+                          <input type="password" class="form-control" id="input02">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="input03" class="col-sm-4 control-label">Input with help text</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="input03">
+                          <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="input04" class="col-sm-4 control-label">Input field with placeholder</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="input04" placeholder="This is placeholder...">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="input05" class="col-sm-4 control-label">Normal textarea</label>
+                        <div class="col-sm-8">
+                          <textarea class="form-control" id="input05" rows="6"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group transparent-editor">
+                        <label class="col-sm-4 control-label">Textarea with editor</label>
+                        <div class="col-sm-8">
+                          <div class="form-control" id="input06"></div>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-footer">
+                        <div class="col-sm-offset-4 col-sm-8">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+                  <!-- /tile body -->
+
+
+
+
+                </section>
+                <!-- /tile -->
+
+
+
+
+              </div>
+              <!-- /col 6 -->
+
+
+              <!-- col 12 -->
+              <div class="col-md-6">
+
+
+
+                <!-- tile -->
+                <section class="tile color transparent-white">
+
+
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>Other</strong> Inputs</h1>
+                    <div class="controls">
+                      <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                      <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+
+                    <form class="form-horizontal" role="form">
+
+                      <div class="form-group">
+                        <label for="input07" class="col-sm-4 control-label">Normal select box</label>
+                        <div class="col-sm-8">
+                          <select class="chosen-select chosen-transparent form-control" id="input07">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+
+                       <div class="form-group">
+                        <label for="input08" class="col-sm-4 control-label">Multiple select box</label>
+                        <div class="col-sm-8">
+                          <select multiple class="chosen-select chosen-transparent form-control" id="input08">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="datepicker" class="col-sm-4 control-label">Datetimepicker field</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="datepicker">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="colorpicker" class="col-sm-4 control-label">Colorpicker HEX field</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="colorpicker">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="colorpicker-rgb" class="col-sm-4 control-label">Colorpicker RGB field</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="colorpicker-rgb">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">Colorpalette</label>
+                        <div class="col-sm-8">
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="color" name="color" readonly="">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-greensea dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tint"></i></button>
+                              <ul class="dropdown-menu pull-right">
+                                <li>
+                                  <div id="event-colorpalette" data-return-color="#color"></div>
+                                </li>
+                              </ul>
+                            </div><!-- /btn-group -->
+                          </div><!-- /input-group -->
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="colorpicker-rgb" class="col-sm-4 control-label">File Upload field</label>
+                        <div class="col-sm-8">
+                          <div class="input-group">
+                          <span class="input-group-btn">
+                            <span class="btn btn-primary btn-file">
+                              <i class="fa fa-upload"></i><input type="file" multiple="">
+                            </span>
+                          </span>
+                          <input type="text" class="form-control" readonly="">
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">Checkbox inputs</label>
+                        <div class="col-sm-8">
+                          <div class="checkbox check-transparent">
+                            <input type="checkbox" value="1" id="opt01" checked>
+                            <label for="opt01">Option 1</label>
+                          </div>
+                          <div class="checkbox check-transparent">
+                            <input type="checkbox" value="1" id="opt02">
+                            <label for="opt02">Option 2</label>
+                          </div>
+                          <div class="checkbox check-transparent">
+                            <input type="checkbox" value="1" id="opt03">
+                            <label for="opt03">Option 3</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label">Radio inputs</label>
+                        <div class="col-sm-8">
+                          <div class="radio radio-transparent">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            <label for="optionsRadios1">Option 1</label>
+                          </div>
+                          <div class="radio radio-transparent">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <label for="optionsRadios2">Option 2</label>
+                          </div>
+                          <div class="radio radio-transparent">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            <label for="optionsRadios3">Option 3</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-footer footer-white">
+                        <div class="col-sm-offset-4 col-sm-8">
+                          <button type="submit" class="btn btn-greensea">Submit</button>
+                          <button type="reset" class="btn btn-red">Reset</button>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+                  <!-- /tile body -->
+
+
+
+
+                </section>
+                <!-- /tile -->
+
+
+
+
+              </div>
+              <!-- /col 6 -->
+
+
+
+            </div>
+            <!-- /row -->
+
+
+
+
+            <!-- row -->
+            <div class="row">
+
+
+              <!-- col 12 -->
+              <div class="col-md-12">
+
+
+
+                <!-- tile -->
+                <section class="tile">
+
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>Input</strong> Groups</h1>
+                    <div class="controls">
+                      <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                      <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+
+                    <div class="input-group margin-bottom-20">
+                      <span class="input-group-addon addon-red">@</span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group margin-bottom-20">
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon addon-greensea">.00</span>
+                    </div>
+
+                    <div class="input-group margin-bottom-20">
+                      <span class="input-group-addon">$</span>
+                      <input type="text" class="form-control">
+                      <span class="input-group-addon">.00</span>
+                    </div>
+
+                    <h4><strong>Sizing</strong></h4>
+
+                    <input class="form-control input-lg margin-bottom-20" type="text" placeholder=".input-lg">
+                    <input class="form-control margin-bottom-20" type="text" placeholder="Default input">
+                    <input class="form-control input-sm margin-bottom-20" type="text" placeholder=".input-sm">
+
+                    <div class="input-group input-group-lg margin-bottom-20">
+                      <span class="input-group-addon addon-blue">@</span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group margin-bottom-20">
+                      <span class="input-group-addon addon-redbrown">@</span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group input-group-sm margin-bottom-20">
+                      <span class="input-group-addon addon-slategray">@</span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <h4><strong>Checkboxes</strong> and radio addons</h4>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group margin-bottom-20">
+                          <span class="input-group-addon">
+                            <input type="checkbox">
+                          </span>
+                          <input type="text" class="form-control">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-6">
+                        <div class="input-group margin-bottom-20">
+                          <span class="input-group-addon">
+                            <input type="radio">
+                          </span>
+                          <input type="text" class="form-control">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+
+                    <h4><strong>Button addons</strong></h4>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group input-group-lg margin-bottom-20">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                          </span>
+                          <input type="text" class="form-control">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-6">
+                        <div class="input-group input-group-lg margin-bottom-20">
+                          <input type="text" class="form-control">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                          </span>
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group margin-bottom-20">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-6">
+                        <div class="input-group margin-bottom-20">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                            <ul class="dropdown-menu pull-right">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group input-group-sm margin-bottom-20">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div><!-- /.col-lg-6 -->
+                      <div class="col-lg-6">
+                        <div class="input-group input-group-sm margin-bottom-20">
+                          <input type="text" class="form-control">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+
+                  </div>
+                  <!-- /tile body -->
+
+
+
+                </section>
+                <!-- /tile -->
+
+
+                <!-- tile -->
+                <section class="tile color transparent-black">
+
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>Vertical</strong> Form</h1>
+                    <div class="controls">
+                      <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                      <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+
+                    <div class="row">
+
+                      <div class="form-group col-sm-6">
+                        <label for="exampleInputEmail">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                      </div>
+                      <div class="form-group col-sm-3">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group col-sm-3">
+                        <label for="exampleInputPassword2">Password repeat</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password repeat">
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <div class="form-group col-sm-4">
+                        <label for="exampleInputCity">City</label>
+                        <input type="text" class="form-control" id="exampleInputCity" placeholder="City">
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <label for="exampleInputAddress">Address</label>
+                        <input type="text" class="form-control" id="exampleInputAddress" placeholder="Address">
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <label for="exampleInputCountry">Country</label>
+                        <input type="text" class="form-control" id="exampleInputCountry" placeholder="Country">
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- /tile body -->
+
+
+
+                </section>
+                <!-- /tile -->
+
+
+
+
+                <!-- tile -->
+                <section class="tile color transparent-white">
+
+
+                  <!-- tile header -->
+                  <div class="tile-header">
+                    <h1><strong>Horizontal</strong> Form</h1>
+                    <div class="controls">
+                      <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                      <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                  <!-- /tile header -->
+
+                  <!-- tile body -->
+                  <div class="tile-body">
+
+                    <div class="form-horizontal">
+
+                      <div class="row">
+
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputEmail2">Email address</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputPassword3">Password</label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputPassword4">Password repeat</label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password repeat">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputCity2">City</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="exampleInputCity2" placeholder="City">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputAddress2">Address</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="exampleInputAddress2" placeholder="Address">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label class="col-sm-4 control-label" for="exampleInputCountry2">Country</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="exampleInputCountry2" placeholder="Country">
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- /tile body -->
+
+
+
+                </section>
+                <!-- /tile -->
+
+
+
+              </div>
+              <!-- /col 12 -->
+
+
+            </div>
+            <!-- /row -->
+
+
+
+          </div>
+          <!-- /content container -->
+
+
+
+
+
+
+        </div>
+        <!-- Page content end -->
+{% endblock %}
+
+
+
+
+{% block script %}
+    <!--时间和颜色选择框-->
+    <script src="/static/js/vendor/momentjs/moment-with-langs.min.js"></script>
+<script src="/static/js/vendor/datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="/static/js/vendor/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <!--调色板-->
+    <script src="/static/js/vendor/colorpalette/bootstrap-colorpalette.js"></script>
+<script>
+
+    //initialize file upload button function
+    $(document)
+      .on('change', '.btn-file :file', function() {
+        var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
+
+
+    $(function(){
+
+      //load wysiwyg editor
+
+      //chosen select input
+      $(".chosen-select").chosen({disable_search_threshold: 10});
+
+      //initialize datepicker
+      $('#datepicker').datetimepicker({
+        icons: {
+          time: "fa fa-clock-o",
+          date: "fa fa-calendar",
+          up: "fa fa-arrow-up",
+          down: "fa fa-arrow-down"
+        }
+      });
+
+      $("#datepicker").on("dp.show",function (e) {
+        var newtop = $('.bootstrap-datetimepicker-widget').position().top - 45;
+        $('.bootstrap-datetimepicker-widget').css('top', newtop + 'px');
+      });
+
+      //initialize colorpicker
+      $('#colorpicker').colorpicker();
+
+      $('#colorpicker').colorpicker().on('showPicker', function(e){
+        var newtop = $('.dropdown-menu.colorpicker.colorpicker-visible').position().top - 45;
+        $('.dropdown-menu.colorpicker.colorpicker-visible').css('top', newtop + 'px');
+      });
+
+      //initialize colorpicker RGB
+      $('#colorpicker-rgb').colorpicker({
+        format: 'rgb'
+      });
+
+      $('#colorpicker-rgb').colorpicker().on('showPicker', function(e){
+        var newtop = $('.dropdown-menu.colorpicker.colorpicker-visible').position().top - 45;
+        $('.dropdown-menu.colorpicker.colorpicker-visible').css('top', newtop + 'px');
+      });
+
+      //initialize file upload button
+      $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+
+        var input = $(this).parents('.input-group').find(':text'),
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+            console.log(log);
+
+        if( input.length ) {
+          input.val(log);
+        } else {
+          if( log ) alert(log);
+        }
+
+      });
+
+      // Initialize colorpalette
+      $('#event-colorpalette').colorPalette({
+        colors:[['#428bca', '#5cb85c', '#5bc0de', '#f0ad4e' ,'#d9534f', '#ff4a43', '#22beef', '#a2d200', '#ffc100', '#cd97eb', '#16a085', '#FF0066', '#A40778', '#1693A5']]
+      }).on('selectColor', function(e) {
+        var data = $(this).data();
+
+        $(data.returnColor).val(e.color);
+        $(this).parents(".input-group").css("border-bottom-color", e.color );
+      });
+
+    })
+
+    </script>
+{% endblock %}

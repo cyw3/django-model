@@ -1,0 +1,87 @@
+{% extends 'layout_default.html' %}
+
+{% block content %}
+<div id="content" class="col-md-12">
+<!-- page header -->
+  <div class="pageheader">
+
+
+    <h2><i class="fa fa-tachometer"></i> 文本编辑器
+    <span>// Place subtitle here...</span></h2>
+
+
+    <div class="breadcrumbs">
+      <ol class="breadcrumb">
+        <li>You are here</li>
+        <li><a href="index.html">Minimal</a></li>
+        <li class="active">文本编辑器</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /page header -->
+ <div class="main">
+     <div class="row">
+         <div class="col-md-12 col-lg-12">
+             <!-- tile -->
+        <section class="tile transparent">
+
+
+
+
+          <!-- tile header -->
+          <div class="tile-header color transparent-black textured rounded-top-corners">
+            <h1><strong>Statistic</strong> Chart</h1>
+            <div class="controls">
+              <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+              <a href="#" class="remove"><i class="fa fa-times"></i></a>
+            </div>
+          </div>
+          <!-- /tile header -->
+
+
+          <!-- tile body -->
+          <div class="tile-body color transparent-white rounded-bottom-corners">
+            <div class="row">
+              <div id="elm1">文本内容哈</div>                 <!-- 编辑框 elm1为此部件ID-->
+            </div>
+          </div>
+          <!-- /tile body -->
+
+
+
+        </section>
+        <!-- /tile -->
+         </div>
+     </div>
+ </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="/static/js/vendor/tinymce/tinymce.min.js"></script>
+    <script>
+
+    tinymce.init({
+        selector:'div#elm1',          //<textarea>中为编辑区域
+        theme: "modern",                  //主题
+
+    height: 300,
+    plugins: [                             //插件，可自行根据现实内容删除
+         "advlist autolink lists charmap print preview hr anchor pagebreak spellchecker",
+         "searchreplace wordcount visualblocks visualchars fullscreen insertdatetime link  nonbreaking",
+         "save table contextmenu directionality emoticons paste textcolor"
+   ],
+   toolbar: "insertfile undo redo | styleselect fontselect fontsizeselect|upload bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      | print preview fullpage | forecolor backcolor",                          //工具栏，可根据需求删除
+   style_formats: [                        //初始时提供的默认格式
+        {title: 'Bold text', inline: 'b'},
+        {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
+        {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
+        {title: 'Example 1', inline: 'span', classes: 'example1'},
+        {title: 'Example 2', inline: 'span', classes: 'example2'},
+        {title: 'Table styles'},
+        {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
+    ]
+
+ });
+    </script>
+{% endblock %}

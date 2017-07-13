@@ -1,0 +1,87 @@
+{% extends 'layout_default.html' %}
+{% block css %}
+<link rel="stylesheet" href="/static/js/vendor/editmd/css/editormd.min.css">
+    <style>
+    .editormd-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: 0 auto;
+    z-index: 1200;
+}
+
+    </style>
+{% endblock %}
+{% block content %}
+<div id="content" class="col-md-12">
+<!-- page header -->
+  <div class="pageheader">
+
+
+    <h2><i class="fa fa-tachometer"></i> 文本编辑器
+    <span>// Place subtitle here...</span></h2>
+
+
+    <div class="breadcrumbs">
+      <ol class="breadcrumb">
+        <li>You are here</li>
+        <li><a href="index.html">Minimal</a></li>
+        <li class="active">文本编辑器</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /page header -->
+ <div class="main">
+     <div class="row">
+         <div class="col-md-12 col-lg-12">
+             <!-- tile -->
+        <section class="tile transparent">
+
+
+
+
+          <!-- tile header -->
+          <div class="tile-header color transparent-black textured rounded-top-corners">
+            <h1><!--此处标题--></h1>
+            <div class="controls">
+              <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+              <a href="#" class="remove"><i class="fa fa-times"></i></a>
+            </div>
+          </div>
+          <!-- /tile header -->
+
+
+          <!-- tile body -->
+          <div class="tile-body color transparent-white rounded-bottom-corners">
+            <div class="row">
+              <!--此处为内容-->
+                <div id="test-editormd">
+                    <div></div>
+                </div>
+
+            </div>
+          </div>
+          <!-- /tile body -->
+
+
+
+        </section>
+        <!-- /tile -->
+         </div>
+     </div>
+ </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script src="/static/js/vendor/editmd/editormd.js"></script>
+    <script>
+    testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 640,
+                    syncScrolling : "single",
+                    path    : "/static/js/vendor/editmd/lib/"
+                });
+    </script>
+{% endblock %}
